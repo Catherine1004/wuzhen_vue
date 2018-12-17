@@ -3,70 +3,6 @@
     <!-- 顶部导航栏 -->
       <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable" v-if="header_show">
         <!--菜单部分-->
-         <!-- <aside id="offCanvasSide" class="mui-off-canvas-right">
-          <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
-            <div class="mui-scroll">
-              <ul class="mui-table-view mui-table-view-chevron mui-table-view-inverted">
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                    传统乌镇
-                  </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                    度假乌镇
-                  </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                    文化乌镇
-                  </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                    会展乌镇
-                  </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                    互动体验
-                  </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                  活动公告
-                </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                  出行锦囊
-                </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="mui-navigate-right">
-                  优化服务
-                </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="">
-                  乌镇旅业
-                </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <a class="">
-                  巾帼文明岗
-                </a>
-                </li>
-                <li class="mui-table-view-cell">
-                  <span>语言版本</span>
-                  <input type="button" value="中文" class="active">
-                  <input type="button" value="English">
-                  <input type="button" value="Deutschland">
-                </li>
-              </ul>
-            </div>
-          </div>
-        </aside> -->
         <div class="mui-inner-wrap">
             <aside id="offCanvasSide" class="mui-off-canvas-right">
                 <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
@@ -133,7 +69,7 @@
                 </div>
               </aside>
              <header class="mui-bar mui-bar-nav">
-            <!-- <router-link to="/home" class="mui-action-back  mui-pull-left logo"><img src="./assets/home/logo2.png"></router-link> -->
+            <router-link to="/home" class="mui-action-back  mui-pull-left logo"><img src="./assets/home/logo2.png"></router-link>
             <a id="offCanvasBtn" href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-right"></a>
             <ul class="mui-pull-right ">
               <li class="mui-pull-left mycontact"><a><img src="./assets/home/sousuo1.png"></a></li>
@@ -141,12 +77,10 @@
               <li class="mui-pull-left mycontact"><router-link  to="/index" class="yuding" >即刻预定</router-link></li> 
             </ul>
           </header> 
-          <router-view v-on:public_header="public_header" v-on:public_footer="public_footer" v-on:public_float="public_float" v-on:public_tabbar="public_tabbar"></router-view> 
         </div>
-        
       </div>
       <!-- 容器显示不同组件 -->
-     
+     <router-view v-on:public_header="public_header" v-on:public_footer="public_footer" v-on:public_float="public_float" v-on:public_tabbar="public_tabbar"></router-view> 
     
     <!-- 底部右侧固定（会话、返回顶部） -->
     <div class="hg-float-btn" v-if="float_show">
@@ -274,7 +208,7 @@
   }
   #offCanvasWrapper{
     width:100%;
-   /* height:50px;*/
+    height:50px;
     background:#272831;
   }
 
