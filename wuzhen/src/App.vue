@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container"   @click="fun()">
+  <div class="app-container">
     <!-- 顶部导航栏 -->
       <div id="offCanvasWrapper" class="mui-off-canvas-wrap mui-draggable" v-if="header_show">
         <!--菜单部分-->
@@ -150,9 +150,7 @@
       ToIndex(){
         this.$router.push("/index");
         console.log(6666)
-      },
-      fun(){console.log(555)}
-
+      }
     },
       
     created(){
